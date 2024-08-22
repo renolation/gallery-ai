@@ -2,6 +2,14 @@
 import Main from '../layouts/Main.astro';
 const profilePicture = "https://i.imgur.com/JPGFE75.jpg";
 import Cards from '../components/Cards.astro';
+import {Astro} from "astro/env";
+
+
+const blogs =await Astro.glob<{
+    title: string,
+    poster: string,
+    subtitle: string,
+}>("../pages/blogs/*.md");
 ---
 <!--component template-->
 
@@ -20,7 +28,7 @@ import Cards from '../components/Cards.astro';
             <p>Name</p>
         </div>
     </div>
-    <Cards cards = {[
+    <Cards cards={[
         {
             title: "card 1",
             gradientFrom: "#ff9a9e",
@@ -28,14 +36,14 @@ import Cards from '../components/Cards.astro';
             to: "/philosophies",
 
         },
-       {
+        {
             title: "Name",
             gradientFrom: "#0985a8",
             gradientTo: "#ff00ac",
             to: "/beyond-tech",
 
         },
-       {
+        {
             title: "Name",
             gradientFrom: "#00a102",
             gradientTo: "#ff00ac",
@@ -44,6 +52,26 @@ import Cards from '../components/Cards.astro';
         },
 
     ]}/>
+
+    <div class="featured-blogs">
+        <h3 class="featured-blogs__title">Featured Blogs</h3>
+        <p class="featured-blogs__description">
+            Opinion pieces that will change eveything you know about web development.
+        </p>
+    </div>
+
+    <ol>
+        {
+            blogs.map((blog) => (
+                    <li class="blogs__list">
+                        <a href={blog.url} class="blog__link">
+                            {blog.frontmatter.title}
+                        </a>
+                    </li>
+            ))
+        }
+    </ol>
+
 </Main>
 
 
@@ -69,5 +97,36 @@ import Cards from '../components/Cards.astro';
     .profile__picture {
         border-radius: 50%;
         margin: 0 2rem 1rem 0;
+    }
+
+    .featured-blogs {
+        margin: 0;
+        padding: 3rem 0 0 0;
+    }
+
+    .featured-blogs__title {
+        font-size: 2rem;
+        color: var(--grey-900);
+    }
+
+    .featured-blogs__description {
+        margin: -1.2rem;
+    }
+
+    .blogs {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .blog__link {
+        color: var(--grey-200);
+        text-decoration: none;
+        color: blue;
+        display: block;
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .blog__link:hover {
+        opacity: 0.8;
     }
 </style>
