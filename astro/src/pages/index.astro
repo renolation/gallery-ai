@@ -1,11 +1,12 @@
 ---
 import Main from '../layouts/Main.astro';
 const profilePicture = "https://i.imgur.com/JPGFE75.jpg";
+import Cards from '../components/Cards.astro';
 ---
 <!--component template-->
 
 
-<Main>
+<Main title="Title">
     <div class="profile">
         <img alt="Name"
              width="100px"
@@ -19,6 +20,30 @@ const profilePicture = "https://i.imgur.com/JPGFE75.jpg";
             <p>Name</p>
         </div>
     </div>
+    <Cards cards = {[
+        {
+            title: "card 1",
+            gradientFrom: "#ff9a9e",
+            gradientTo: "#ff00ac",
+            to: "/philosophies",
+
+        },
+       {
+            title: "Name",
+            gradientFrom: "#0985a8",
+            gradientTo: "#ff00ac",
+            to: "/beyond-tech",
+
+        },
+       {
+            title: "Name",
+            gradientFrom: "#00a102",
+            gradientTo: "#ff00ac",
+            to: "/work-summary",
+
+        },
+
+    ]}/>
 </Main>
 
 

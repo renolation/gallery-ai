@@ -2,6 +2,13 @@
 import "../styles/global.css";
 import Footer from "../components/Footer.astro";
 import NavigationBar from "../components/NavigationBar.astro";
+import {Astro} from "astro/env";
+
+type Props = {
+    title: string;
+}
+
+const {title} = Astro.props;
 ---
 
 <html lang="en">
@@ -16,7 +23,36 @@ import NavigationBar from "../components/NavigationBar.astro";
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Matemasie&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
           rel="stylesheet">
-    <title>Astro</title>
+    <title>{title}</title>
+    <script is:inline>
+        const DARK_CLASS = "dark";
+        const COLOR_MODE = "color-mode";
+        const LIGHT_THEME = "light";
+        const DARK_THEME = "dark";
+        const rootElement = document.documentElement;
+
+        const getInitColorMode = () => {
+            const savedColorMode = window.localStorage.getItem(COLOR_MODE);
+            if (savedColorMode) {
+                return savedColorMode;
+            }
+            if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                return DARK_THEME;
+            }
+            return LIGHT_THEME;
+        };
+
+        const initColorMode = getInitColorMode();
+        const setInitColorMode = (mode) => {
+            if (mode === LIGHT_THEME) {
+                rootElement.classList.remove(DARK_CLASS);
+            } else {
+                rootElement.classList.add(DARK_CLASS);
+            }
+        }
+
+        setInitColorMode(initColorMode)
+    </script>
 </head>
 <body>
 <main>

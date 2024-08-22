@@ -2,7 +2,7 @@
 
 ---
 
-<button aria-label="Theme toggler">
+<button aria-label="Theme toggler" data-theme-toggle>
     <svg width="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <path
                 class="sun"
@@ -52,31 +52,9 @@
     const COLOR_MODE = "color-mode";
     const LIGHT_THEME = "light";
     const DARK_THEME = "dark";
-    const toggle = document.querySelector("button");
+    const toggle = document.querySelector("[data-theme-toggle]");
     const rootElement = document.documentElement;
 
-    const getInitColorMode = () => {
-        const savedColorMode = window.localStorage.getItem(COLOR_MODE);
-        if(savedColorMode){
-            return savedColorMode;
-        }
-        if(window.matchMedia("(prefers-color-scheme: dark)").matches){
-            return DARK_THEME;
-        }
-        return LIGHT_THEME;
-    };
-
-    const initColorMode = getInitColorMode();
-
-    const setInitColorMode = (mode: string) => {
-        if(mode === LIGHT_THEME){
-            rootElement.classList.remove(DARK_CLASS);
-        } else {
-            rootElement.classList.add(DARK_CLASS);
-        }
-    }
-
-    setInitColorMode(initColorMode)
 
     if (toggle) {
         toggle.addEventListener("click", () => {
