@@ -1,0 +1,49 @@
+---
+import ThemeToggle from './ThemeToggle.astro'
+---
+
+<nav>
+    <ul>
+        <li>
+            <a href="/">Home</a>
+        </li>
+          <li>
+            <a href="#">Home 2</a>
+        </li>
+          <li>
+            <a href="#">Home 3</a>
+        </li>
+    </ul>
+    <ThemeToggle/>
+</nav>
+
+<style>
+    nav {
+        padding: 2rem 0;
+       aligh-items: flex-start;
+        display: flex;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+    }
+    nav li {
+        margin: 0 1rem;
+        opacity: 0.8;
+        list-style: none;
+        font-size: 0.95rem;
+    }
+    nav ul li a {
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        text-decoration: none;
+        color: var(--grey-400);
+
+    }
+    nav ul li a:hover {
+        color: var(--grey-900);
+    }
+</style>
