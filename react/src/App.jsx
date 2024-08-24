@@ -5,7 +5,7 @@ import MainHeader from "./components/MainHeader.jsx";
 import {useState} from "react";
 
 function App() {
-    const [isModalVisible, setIsModalVisible] = useState(true);
+    const [isModalVisible, setIsModalVisible] = useState(false);
 
     function showModalHandler() {
         setIsModalVisible(true);
@@ -20,6 +20,7 @@ function App() {
             <main>
                 <PostsList isPosting={isModalVisible}
                     onStopPosting={hideModalHandler}
+
                 />
             </main>
         </>
