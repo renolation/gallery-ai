@@ -1,17 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Post from "./components/Post.jsx";
+import PostsList from "./components/PostsList.jsx";
+import NewPost from "./components/NewPost.jsx";
+import MainHeader from "./components/MainHeader.jsx";
+import {useState} from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
+    const [isModalVisible, setIsModalVisible] = useState(true);
 
-  return (
-    <>
-      <Post />
-    </>
-  )
+    function showModalHandler() {
+        setIsModalVisible(true);
+    }
+    function hideModalHandler() {
+        setIsModalVisible(false);
+    }
+
+    return (
+        <>
+            <MainHeader onCreatePost={showModalHandler}/>
+            <main>
+                <PostsList isPosting={isModalVisible}
+                    onStopPosting={hideModalHandler}
+                />
+            </main>
+        </>
+    )
 }
 
 export default App
