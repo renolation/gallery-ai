@@ -10,12 +10,13 @@ function Modal(props) {
 
     return (
         <>
-            <div className={classes.backdrop} onClick={closeHandler}>
+            <div className={classes.backdrop} onClick={closeHandler} />
                 <dialog open className={classes.modal}>
                     {props.children}
                 </dialog>
-            </div>
+
         </>
     )
 }
 export default Modal;
+

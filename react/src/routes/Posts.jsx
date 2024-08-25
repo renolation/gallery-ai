@@ -9,7 +9,7 @@ function Posts() {
 
     return (
         <>
-            <Outlet />
+            <Outlet/>
             <main>
                 <PostsList/>
             </main>
@@ -18,3 +18,9 @@ function Posts() {
 }
 
 export default Posts
+
+export async function loader() {
+    const data = await fetch('http://localhost:8080/posts');
+    const postsData = await data.json();
+    return postsData.posts;
+}
