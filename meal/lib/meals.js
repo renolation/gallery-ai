@@ -22,15 +22,15 @@ export async function saveMeal(meal) {
     const extension = meal.image.name.split('.').pop();
     const fileName = `${meal.slug}.${extension}`;
 
-    const stream = fs.createWriteStream(`public/images/${fileName}`);
-    const buffer = await meal.image.arrayBuffer();
-    stream.write(Buffer.from(buffer), (error) => {
-        if (error) {
-            throw new Error('Error saving image');
-        }
-    });
+    // const stream = fs.createWriteStream(`public/images/${fileName}`);
+    // const buffer = await meal.image.arrayBuffer();
+    // stream.write(Buffer.from(buffer), (error) => {
+    //     if (error) {
+    //         throw new Error('Error saving image');
+    //     }
+    // });
 
-    meal.image = `/images/${fileName}`;
+    meal.image = `/images/macncheese.jpg`;
 
     db.prepare(`
         insert into meals (title, summary, instructions, image, creator, creator_email, slug)
