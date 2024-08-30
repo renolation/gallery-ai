@@ -1,27 +1,25 @@
-import Link from "next/link";
-import logoImg from '@/assets/logo.jpg';
-import Image from 'next/image';
-import classes from './main-header.module.css'
-import NavLink from './nav-link';
+
+import Link from 'next/link';
+import NavLink from "@/components/nav-link";
 
 export default function MainHeader() {
-    return (
-        <header className={classes.header}>
-            <Link className={classes.logo} href="/">
-                <Image src={logoImg} alt="A plate with food on it" priority/>
-                NextLevel Food
-            </Link>
-            <nav className={classes.nav}>
 
-                <ul>
-                    {/*<li>*/}
-                    {/*    <NavLink href='/'>Home</NavLink>*/}
-                    {/*</li>*/}
-                    <li>
-                        <NavLink href='/news'>News</NavLink>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    );
+
+    return (
+    <header id="main-header">
+      <div id="logo">
+        <Link href="/">NextNews</Link>
+      </div>
+      <nav>
+          <ul>
+              <li>
+              <NavLink href={'/news'}>News</NavLink>
+              </li>
+              <li>
+                  <NavLink href={'/archive'}>Archive</NavLink>
+              </li>
+          </ul>
+      </nav>
+    </header>
+  );
 }
