@@ -15,6 +15,9 @@ export default function MainHeader() {
                     <li>
                         <NavLink href={'/community'}>Community</NavLink>
                     </li>
+                    <li>
+                        <NavLink href={'/auth?mode=login'}>Login</NavLink>
+                    </li>
                 </ul>
             </nav>
         </header>
