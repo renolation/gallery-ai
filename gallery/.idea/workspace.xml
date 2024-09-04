@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="002d8ad7-a230-420a-b23f-648b90e56df1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/posts/[postSlug]/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/posts/[postSlug]/page.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/posts/not-found.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/posts/page.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/posts/create/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/posts/create/page.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/posts/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/main-header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/main-header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/posts/post-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/posts/post-item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/post.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +38,7 @@
     "Node.js.layout.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/phuocnguyen/Projects/gallery-ai/gallery/app/posts",
+    "last_opened_file_path": "/Users/phuocnguyen/Projects/gallery-ai/gallery/app/posts/create",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -64,11 +58,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/posts/create" />
       <recent name="$PROJECT_DIR$/app/posts" />
       <recent name="$PROJECT_DIR$/app/posts/[postSlug]" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/components/posts" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -103,7 +97,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725462290183</updated>
-      <workItem from="1725462291205" duration="2873000" />
+      <workItem from="1725462291205" duration="4292000" />
     </task>
     <servers />
   </component>
