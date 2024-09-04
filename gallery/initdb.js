@@ -177,6 +177,22 @@ db.prepare(`
     )
 `).run();
 
+
+db.prepare(`
+  CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY,
+    email TEXT UNIQUE,
+    password TEXT
+  );
+`).run();
+
+db.prepare(`CREATE TABLE IF NOT EXISTS sessions (
+  id TEXT NOT NULL PRIMARY KEY,
+  expires_at INTEGER NOT NULL,
+  user_id TEXT NOT NULL,
+  FOREIGN KEY (user_id) REFERENCES users(id)
+)`).run();
+
 async function initData() {
   const stmt = db.prepare(`
       INSERT INTO posts VALUES (
