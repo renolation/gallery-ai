@@ -1,4 +1,4 @@
-.post {
+.meal {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -27,8 +27,8 @@
   font-style: italic;
 }
 
-.post h2,
-.post p {
+.meal h2,
+.meal p {
   margin: 0;
 }
 
@@ -37,7 +37,7 @@
   height: 15rem;
 }
 
-.post img {
+.meal img {
   object-fit: cover;
 }
 
