@@ -9,3 +9,7 @@ export async function getPosts() {
 
     return db.prepare('Select * from posts').all();
 }
+
+export function getPost(slug) {
+    return db.prepare('select * from posts where slug = ?').get(slug);
+}

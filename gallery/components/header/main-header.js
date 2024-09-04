@@ -1,11 +1,12 @@
 import classes from "./main-header.module.css";
 import NavLink from "@/components/header/nav-link";
+import Link from "next/link";
 
 
 export default function MainHeader() {
     return (
         <header className={classes.header}>
-            <h1>Next Meals</h1>
+            <Link href={'/'}><h1>Next Meals</h1></Link>
             <nav className={classes.nav}>
                 <ul>
                     <li>

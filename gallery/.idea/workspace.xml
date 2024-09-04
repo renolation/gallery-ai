@@ -5,84 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="002d8ad7-a230-420a-b23f-648b90e56df1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/posts/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/burger.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/curry.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/dumplings.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/community.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/events.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/icons/meal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/macncheese.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/pizza.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/schnitzel.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/tomato-salad.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/header/main-header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/header/main-header.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/header/nav-link.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/header/nav-link.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/posts/post-item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/posts/posts-grid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/posts/posts-grid.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/post.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postcss.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gallery.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.npmrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/about/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/about/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/docs/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/docs/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/error.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/post.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/ultils/galley.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/pricing/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/pricing/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/providers.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Navbar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/counter.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/icons.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/posts/post-grid.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/posts/post-item.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/posts/post-item.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/posts/post-item.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/primitives.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/theme-switch.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/fonts.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/site.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/initdb.js" beforeDir="false" afterPath="$PROJECT_DIR$/initdb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/app/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meal/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/../meal/app/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meal/components/main-header/main-header.js" beforeDir="false" afterPath="$PROJECT_DIR$/../meal/components/main-header/main-header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../meal/initdb.js" beforeDir="false" afterPath="$PROJECT_DIR$/../meal/initdb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/posts/[postSlug]/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/posts/[postSlug]/page.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/posts/not-found.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/posts/page.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/posts/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/main-header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/main-header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/posts/post-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/posts/post-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/post.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +44,7 @@
     "Node.js.layout.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/phuocnguyen/Projects/gallery-ai/gallery/components/posts",
+    "last_opened_file_path": "/Users/phuocnguyen/Projects/gallery-ai/gallery/app/posts",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -132,9 +64,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/posts" />
+      <recent name="$PROJECT_DIR$/app/posts/[postSlug]" />
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/components/posts" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/components/header" />
     </key>
   </component>
   <component name="RunManager">
@@ -169,7 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725462290183</updated>
-      <workItem from="1725462291205" duration="2115000" />
+      <workItem from="1725462291205" duration="2873000" />
     </task>
     <servers />
   </component>

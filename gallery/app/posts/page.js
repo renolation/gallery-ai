@@ -1,5 +1,7 @@
 import {getPosts} from "@/lib/post";
 import PostsGrid from "@/components/posts/posts-grid";
+import {Suspense} from "react";
+import classes from './page.module.css'
 
 
 async function Posts() {
@@ -8,11 +10,13 @@ async function Posts() {
 }
 
 
-
-export default function PostsPage(){
+export default function PostsPage() {
     return (
         <main>
-            <Posts/>
+            <Suspense fallback={
+                <p className={classes.loading}>Fetching meals....</p>}>
+                <Posts/>
+            </Suspense>
         </main>
     );
 }
