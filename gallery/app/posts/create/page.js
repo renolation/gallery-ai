@@ -1,10 +1,17 @@
 'use client';
 import classes from './page.module.css';
+import {useFormState} from 'react-dom'
+import {sharePost} from "@/actions/post-action";
+import PostFormSubmit from "@/components/posts/post-form-submit";
+import ImagePicker from "@/components/posts/image-picker";
 
 
 export default function CreatePost(){
-    return <>
 
+    const [state, formAction] = useFormState(sharePost, {message: null});
+
+
+    return <>
         <header className={classes.header}>
             <h1>
                 Share your <span className={classes.highlight}>favorite meal</span>
@@ -41,12 +48,11 @@ export default function CreatePost(){
                         required
                     ></textarea>
                 </p>
-                {/*<ImagePicker label="Your image" name="image"/>*/}
-                {/*{state.message && <p>{state.message}</p>}*/}
-
-                {/*<p className={classes.actions}>*/}
-                {/*    <MealsFormSubmit/>*/}
-                {/*</p>*/}
+                <ImagePicker label="Your image" name="image"/>
+                {state.message && <p>{state.message}</p>}
+                <p className={classes.actions}>
+                    <PostFormSubmit/>
+                </p>
             </form>
         </main>
 
