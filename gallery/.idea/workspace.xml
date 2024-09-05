@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="002d8ad7-a230-420a-b23f-648b90e56df1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/create-form/create-form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/create-form/create-form.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actions/gallery-action.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/gallery/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/gallery/gallery-form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/gallery/gallery-form.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/prisma-auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prisma/migrations/20240904191305_init/migration.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prisma/migrations/20240905024200_init/migration.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prisma/migrations/migration_lock.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actions/auth-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/actions/auth-actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/posts/create/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/create/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/posts.db" beforeDir="false" afterPath="$PROJECT_DIR$/posts.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/main-header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/main-header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +32,13 @@
       <list>
         <option value="JavaScript File" />
       </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="false" />
+    <option name="myAllFileTypesSelected" value="true" />
+    <option name="mySelectedFileTypes">
+      <set />
     </option>
   </component>
   <component name="Git.Settings">
@@ -41,12 +57,13 @@
     "Node.js.layout.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/phuocnguyen/Projects/gallery-ai/gallery/components/create-post",
+    "last_opened_file_path": "/Users/phuocnguyen/Projects/gallery-ai/gallery/components/gallery",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "/Users/phuocnguyen/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -61,11 +78,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/gallery" />
       <recent name="$PROJECT_DIR$/components/create-post" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/components/posts" />
       <recent name="$PROJECT_DIR$/app/posts/create" />
-      <recent name="$PROJECT_DIR$/app/posts" />
     </key>
   </component>
   <component name="RunManager">

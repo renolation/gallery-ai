@@ -1,3 +1,4 @@
 /route/node_modules/
 route/.next
 route/backend/node_modules
+gallery/.env

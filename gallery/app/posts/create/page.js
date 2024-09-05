@@ -12,7 +12,6 @@ export default async function CreatePost(){
         return redirect('/')
     }
 
-
     return <>
         <header className={classes.header}>
             <h1>

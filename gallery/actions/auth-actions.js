@@ -3,6 +3,7 @@
 import {redirect} from "next/navigation";
 import {createAuthSession, createUser, destroySession, getUserByEmail} from "@/lib/auth";
 import {hashUserPassword, verifyPassword} from "@/lib/hash";
+import {createUserPrisma} from "@/lib/prisma-auth";
 
 export async function signup(prevState, formData) {
     const email = formData.get('email');

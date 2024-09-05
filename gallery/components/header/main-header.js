@@ -13,7 +13,7 @@ export default function MainHeader() {
                         <NavLink href={'/posts'}>Posts</NavLink>
                     </li>
                     <li>
-                        <NavLink href={'/community'}>Community</NavLink>
+                        <NavLink href={'/gallery'}>Gallery</NavLink>
                     </li>
                     <li>
                         <NavLink href={'/auth?mode=login'}>Login</NavLink>
