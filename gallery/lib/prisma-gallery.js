@@ -1,6 +1,5 @@
 import {PrismaClient} from '@prisma/client';
 
-const prisma = new PrismaClient();
 
 export async function saveGallery(name, description) {
     const existingGallery = await prisma.gallery.findFirst({

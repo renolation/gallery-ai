@@ -7,36 +7,24 @@ import {useFormState} from "react-dom";
 import {sharePost} from "@/actions/post-action";
 
 
-export default function CreateForm(){
+export default function CreateForm() {
 
-        const [state, formAction] = useFormState(sharePost, {message: null});
+    const [state, formAction] = useFormState(sharePost, {message: null});
 
     return (
         <main className={classes.main}>
             <form className={classes.form} action={formAction}>
-                <div className={classes.row}>
-                    <p>
-                        <label htmlFor="name">Your name</label>
-                        <input type="text" id="name" name="name" required/>
-                    </p>
-                    <p>
-                        <label htmlFor="email">Your email</label>
-                        <input type="email" id="email" name="email" required/>
-                    </p>
-                </div>
+
                 <p>
-                    <label htmlFor="title">Title</label>
+                    <label htmlFor="title">Your title</label>
                     <input type="text" id="title" name="title" required/>
                 </p>
+
                 <p>
-                    <label htmlFor="summary">Short Summary</label>
-                    <input type="text" id="summary" name="summary" required/>
-                </p>
-                <p>
-                    <label htmlFor="instructions">Instructions</label>
+                    <label htmlFor="description">Description</label>
                     <textarea
-                        id="instructions"
-                        name="instructions"
+                        id="description"
+                        name="description"
                         rows="10"
                         required
                     ></textarea>

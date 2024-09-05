@@ -2,25 +2,28 @@ import {Lucia} from 'lucia';
 import {BetterSqlite3Adapter} from "@lucia-auth/adapter-sqlite";
 import {cookies} from "next/headers";
 import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
-const sql = require('better-sqlite3');
-const db = sql('posts.db');
+import { PrismaAdapter } from "@lucia-auth/adapter-prisma";
+import {prisma} from "@/lib/prisma";
 
-const adapter = new BetterSqlite3Adapter(db, {
-    user: 'users',
-    session: 'sessions'
+
+
+const adapter = new PrismaAdapter(prisma.session, prisma.user);
+
+export const lucia = new Lucia(adapter, {
+	sessionCookie: {
+		attributes: {
+			// set to `true` when using HTTPS
+			secure: process.env.NODE_ENV === "production"
+		}
+	}
 });
 
-const lucia = new Lucia(adapter, {
-    sessionCookie: {
-        expires: false,
-        attributes: {
-            secure: process.env.NODE_ENV === 'production'
-        }
-    }
-})
+
 
 export async function createAuthSession(userId) {
+    console.log('createAuthSession: ', userId);
     const session = await lucia.createSession(userId, {});
+
     const sessionCookie = lucia.createSessionCookie(session.id);
     cookies().set(
         sessionCookie.name,
@@ -87,13 +90,3 @@ export async function destroySession() {
     )
 }
 
-export function createUser(email, password) {
-    const result = db
-        .prepare('insert into users (email, password) values (? , ?)')
-        .run(email, password);
-    return result.lastInsertRowid;
-}
-
-export function getUserByEmail(email) {
-    return db.prepare('select * from users where email= ?').get(email);
-}

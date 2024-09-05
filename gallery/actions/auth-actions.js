@@ -1,12 +1,16 @@
 'use server';
 
 import {redirect} from "next/navigation";
-import {createAuthSession, createUser, destroySession, getUserByEmail} from "@/lib/auth";
+import {createAuthSession, destroySession} from "@/lib/auth";
 import {hashUserPassword, verifyPassword} from "@/lib/hash";
-import {createUserPrisma} from "@/lib/prisma-auth";
+import {getUserByEmail} from "@/lib/prisma-auth";
 
 export async function signup(prevState, formData) {
     const email = formData.get('email');
+    let username = formData.get('username');
+    if(!username) {
+        username = email.split('@')[0];
+    }
     const password = formData.get('password');
 
     let errors = {};
@@ -26,7 +30,7 @@ export async function signup(prevState, formData) {
     }
     const hashedPassword = hashUserPassword(password);
     try {
-        const id = createUser(email, hashedPassword);
+        const id = createUser(email,username, hashedPassword);
         await createAuthSession(id)
         redirect('/posts');
     } catch (error) {
@@ -39,7 +43,6 @@ export async function signup(prevState, formData) {
         }
         throw error;
     }
-
 
 }
 
