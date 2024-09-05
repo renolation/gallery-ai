@@ -12,23 +12,3 @@ export async function createUserPrisma(email, password) {
     return user.id;
 }
 
-export async function saveGallery(name, description) {
-
-    const existingGallery = await prisma.gallery.findFirst({
-        where: {name: name},
-    });
-
-    if (existingGallery) {
-        return {message: 'Gallery with this name already exists.'};
-    }
-
-    const gallery = await prisma.gallery.create({
-        data: {
-            name: name,
-            description: description,
-        },
-    });
-    console.log(gallery);
-    return {message: 'Gallery created successfully.', gallery};
-
-}

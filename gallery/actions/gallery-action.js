@@ -1,8 +1,10 @@
 'use server';
-import {saveGallery} from "@/lib/prisma-auth";
+
+
+
+import {saveGallery} from "@/lib/prisma-gallery";
 import {redirect} from "next/navigation";
-
-
+import {revalidatePath} from "next/cache";
 
 function isInvalidText(text) {
     return !text || text.trim() === '';
@@ -26,7 +28,9 @@ export async function createGallery(prevState, formData) {
     if (result.message === 'Gallery with this name already exists.') {
         return { message: result.message };
     } else {
-        return { message: 'Gallery created successfully.' };
+        revalidatePath('/gallery');
+        redirect('/gallery');
+        // return { message: 'Gallery created successfully.' };
     }
 
 }
