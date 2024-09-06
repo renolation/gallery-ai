@@ -1,11 +1,14 @@
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from '@prisma/client';
 import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
-export * from "@prisma/client";
+
+const prismaClientSingleton = () => {
+  return new PrismaClient();
+};
 
 const globalForPrisma = globalThis;
 
-export const prisma = globalForPrisma.prisma || new PrismaClient();
+const prisma = globalForPrisma.prismaGlobal ?? prismaClientSingleton();
 
-export { PrismaClient as PrismaClientSingleton };
+export default prisma;
 
-if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
+if (process.env.NODE_ENV !== 'production') globalForPrisma.prismaGlobal = prisma;

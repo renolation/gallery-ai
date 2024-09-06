@@ -5,8 +5,6 @@ import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/post
 import { PrismaAdapter } from "@lucia-auth/adapter-prisma";
 import {prisma} from "@/lib/prisma";
 
-
-
 const adapter = new PrismaAdapter(prisma.session, prisma.user);
 
 export const lucia = new Lucia(adapter, {
